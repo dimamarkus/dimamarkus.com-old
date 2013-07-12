@@ -191,6 +191,17 @@ or whatever your exact path to the rspec gem is
 	git push
 	git push heroku
 
+<br>
+###22 - Initialize Foundation
+
+	rails g foundation:install
+
+<br>
+###23 - Change the config file so that Foundation doesn't break Heroku
+
+add the following line to `application.rb`
+	  config.assets.initialize_on_precompile = false
+
 
 
 
