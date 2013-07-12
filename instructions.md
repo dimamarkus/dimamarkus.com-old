@@ -80,6 +80,7 @@ This step is necessary for the next one to work on some versions of sqlite/rspec
 
 Add .DS_Store to .gitignore
 
+
 <br>
 ###08 - Perform initial commit
 
@@ -100,10 +101,62 @@ Go to www.github.com and create a new repository.
 
 
 <br> 
-###11
+###11 - Push application into production right away
 
 	heroku create --stack cedar
 	git push heroku master
+
+<br>
+###12 - Test the production app
+	
+	heroku open
+
+
+<br>
+###13 - Create a new version control branch to create the static pages
+
+	git checkout -b static-pages
+
+<br>
+###14 - Generate a static pages controller
+
+You can put in the name of the pages that you want after the name of the controller. 
+
+The `--no-test-framework` flag will supress the creation of spec files that we don't want. 
+
+	rails generate controller StaticPages home web blog music about --no-test-framework
+
+
+<br>
+###15 - 
+
+
+<br>
+###16 - 
+
+
+<br>
+###17 - 
+
+
+<br>
+###18 -
+
+
+<br>
+###19 -
+
+
+<br>
+###20 -
+
+
+<br>
+###21 - 
+
+
+
+
 
 
 
