@@ -178,14 +178,18 @@ or whatever your exact path to the rspec gem is
 3. Make sure the test passes
 
 <br>
-###20 - Commit and merge	
+###20 - Commit, switch to master branch and merge
 
-git add.
-git commit -m "Finish static pages"
-
+	git add.
+	git commit -m "Finish static pages"
+	git checkout master
+	git merge static-pages
 
 <br>
-###21 - 
+###21 - Push to Github and Heroku
+
+	git push
+	git push heroku
 
 
 
