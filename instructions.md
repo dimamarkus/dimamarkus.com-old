@@ -128,27 +128,60 @@ The `--no-test-framework` flag will supress the creation of spec files that we d
 
 
 <br>
-###15 - 
+###15 - Generate a test for our static pages
+
+	rails generate integration_test static_pages
 
 
 <br>
-###16 - 
+###16 - Write the tests
+
+For example, my *static_pages_spec.rb* file starts with the following  
+
+	require 'spec_helper'
+
+	describe "StaticPages" do
+		describe "Home page" do
+			it "should have the content 'Web Design'" do	
+				visit '/static_pages/home'
+				page.should have_content('Web Design')
+			end
+		end
+	end
+
+
 
 
 <br>
-###17 - 
+###17 - Nokogiri may give you problems, to fix them, reinstall it along with libxml2 
+
+	brew install libxml2 libxslt
+	sudo gem install nokogiri
 
 
 <br>
-###18 -
+###18 - To be able to run tests within Sublime Text quickly
 
+Go to your `../sublime-text–2/Packages/RubyTest/RubyTest.sublime-settings` file.
+
+Change the `"run_rspec_command"` and `"run_single_rspec_command:"` values to  
+
+`"/Users/Dima/.rvm/gems/ruby-2.0.0-p0/bin/rspec {relative_path} --drb",`  
+
+or whatever your exact path to the rspec gem is
 
 <br>
-###19 -
+###19 - Perform your first test
 
+1. Make sure the test fails
+2. Change your code
+3. Make sure the test passes
 
 <br>
-###20 -
+###20 - Commit and merge	
+
+git add.
+git commit -m "Finish static pages"
 
 
 <br>
