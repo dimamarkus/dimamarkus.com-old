@@ -1,0 +1,18 @@
+@import "compass";
+
+
+/*------- Hide mobile menu on desktops -------*/
+
+@media all and (min-width: 480px) {
+	#menu {
+		background: #eee;
+	}
+	#page {
+		border-left: 1px solid #ccc;
+	}
+	/* hide open-button */
+	a[href="#menu"]
+	{
+		display: none !important;
+	}
+}
