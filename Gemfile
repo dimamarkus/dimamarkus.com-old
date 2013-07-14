@@ -16,6 +16,9 @@ group :development, :test do
   gem 'childprocess', '0.3.6'
   gem 'spork', '0.9.2'
   gem 'nokogiri'
+  gem 'guard-livereload', require: false
+  gem 'rack-livereload'
+  gem 'rb-fsevent',       require: false
 end
 
 # Gems used only for assets and not required

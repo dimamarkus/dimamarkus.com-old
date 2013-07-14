@@ -24,22 +24,20 @@
 
   <body>
   
-  <div id="page">
+    <div id="page">
 
-
-      <header>
-        <a href="#menu" class="button hamburger"></a>
-        <h1>Dima Markus</h1>
+      <header class="row">
+        <div class="small-2 columns">
+          <a href="#menu" class="menu-button button"></a>
+        </div>
+        <div class="small-10 small-centered columns">
+          <h1 class="banner">Dima Markus</h1>
+        </div>
       </header>
 
-
-  <div class="content">
-
-
-    <%= yield %>
-
-</div>
-
+      <div class="content">
+        <%= yield %>
+      </div>
 
       <nav id="menu">
         <ul>
@@ -51,7 +49,7 @@
         </ul>
       </nav>
 
-  </div>
+    </div>
     
     <%= javascript_include_tag "application" %>
 

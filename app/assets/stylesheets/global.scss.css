@@ -1,4 +1,26 @@
-@import "compass";
+/*@import "compass";*/
+
+
+header {
+	height: 5em;
+	width: 100%;
+	background: blue;
+	text-align: center;
+}
+
+.banner {
+	/*margin-left: 2em;*/
+}
+
+.menu-button {
+	margin-top: .75em;
+	padding: 1.5em;
+}
+
+
+
+
+
 
 
 /*------- Hide mobile menu on desktops -------*/
@@ -16,3 +38,4 @@
 		display: none !important;
 	*/}
 }
+
