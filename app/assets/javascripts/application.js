@@ -27,6 +27,22 @@
 //= require foundation/foundation.topbar
 //= require foundation/foundation.interchange
 //= require foundation/foundation.placeholder
+//= require jquery.mmenu.js
 //= require_tree .
 
 $(document).foundation();
+
+
+// Mmenu trigger
+$(function() {
+    $('nav#menu').mmenu();
+});
+
+
+// <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src='//www.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));

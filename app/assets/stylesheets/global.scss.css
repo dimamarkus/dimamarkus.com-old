@@ -11,8 +11,8 @@
 		border-left: 1px solid #ccc;
 	}
 	/* hide open-button */
-	a[href="#menu"]
+/*	a[href="#menu"]
 	{
 		display: none !important;
-	}
+	*/}
 }
