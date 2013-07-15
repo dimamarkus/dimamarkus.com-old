@@ -33,9 +33,12 @@
 $(document).foundation();
 
 
-// Mmenu trigger
+// Mmenu trigger - hardware acceleration has to be turned off to 
+// keep the header fixed during animation
 $(function() {
-    $('nav#menu').mmenu();
+  $('nav#menu').mmenu({	configuration: {
+		hardwareAcceleration: false
+	}});
 });
 
 

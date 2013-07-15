@@ -26,28 +26,15 @@
   
     <div id="page">
 
-      <header class="row">
-        <div class="small-2 columns">
-          <a href="#menu" class="menu-button button"></a>
-        </div>
-        <div class="small-10 small-centered columns">
-          <h1 class="banner">Dima Markus</h1>
-        </div>
-      </header>
+      <%= render 'layouts/header' %>
 
       <div class="content">
         <%= yield %>
       </div>
+      
+      <%= render 'layouts/footer' %>
 
-      <nav id="menu">
-        <ul>
-          <li class="Selected"><a href="index.html">Home</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Music</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
+      <%= render 'layouts/mobile-nav' %>
 
     </div>
     

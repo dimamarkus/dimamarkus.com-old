@@ -10,6 +10,9 @@
  *
  *= require_self
  *= require foundation_and_overrides
+ *= require boilerplate
+ *= require normalize
+ *= require mmenu
  *= require_tree .
  */
 
