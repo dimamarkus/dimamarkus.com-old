@@ -1,0 +1,56 @@
+/* -------------------------------------------------------------------------- */
+/* ------------------------------ TYPOGRAPHY -------------------------------- */
+/* -------------------------------------------------------------------------- */
+h1 {
+  color: #8eeadf;
+  font-size: 2em;
+  margin: 0; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- HEADER ---------------------------------- */
+/* -------------------------------------------------------------------------- */
+header {
+  background: #0c0623;
+  height: 3em;
+  margin-bottom: 1em;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: left 0.5s ease, right 0.5s ease, margin 0.5s ease;
+  -moz-transition: left 0.5s ease, right 0.5s ease, margin 0.5s ease;
+  transition: left 0.5s ease, right 0.5s ease, margin 0.5s ease; }
+
+.menu-button {
+  margin-bottom: 0;
+  margin-top: 0.4em;
+  padding: 1em; }
+
+html.mmenu-opened header {
+  left: 0%;
+  margin-left: 0px; }
+
+html.mmenu-opening header {
+  left: 100%;
+  margin-left: -65px; }
+
+@media all and (min-width: 500px) {
+  html.mmenu-opening header {
+    left: 500px; } }
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- FOOTER ---------------------------------- */
+/* -------------------------------------------------------------------------- */
+footer {
+  padding-top: 1em;
+  color: white;
+  background: #0c0623;
+  margin-top: 1em; }
+
+#copyright {
+  background: #444;
+  width: 100%;
+  text-align: center;
+  clear: both; }
+  #copyright p {
+    margin-bottom: 0; }
