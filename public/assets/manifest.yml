@@ -1,0 +1,13 @@
+---
+rails.png: rails.png
+rails/index.png: rails.png
+application.js: application.js
+application/index.js: application.js
+application.css: application.css
+application/index.css: application.css
+config.rb: config.rb
+config/index.rb: config.rb
+vendor/custom.modernizr.js: vendor/custom.modernizr.js
+vendor/custom/index.modernizr.js: vendor/custom.modernizr.js
+vendor/zepto.js: vendor/zepto.js
+vendor/zepto/index.js: vendor/zepto.js
