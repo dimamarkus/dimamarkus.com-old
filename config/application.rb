@@ -56,10 +56,14 @@ module DimamarkusCom
     # Enable the asset pipeline
     config.assets.enabled = true
 
+
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
     # This needs to be turned on so that Foundation won't break Heroku deployment
     config.assets.initialize_on_precompile = false
+
+    # Grab the fonts into the pipeline
+    # config.assets.paths << "#{Rails.root}/app/assets/fonts"
   end
 end

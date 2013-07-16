@@ -18,8 +18,77 @@ h1 {
 }
 
 
+@font-face {
+	font-family: 'Aleo-Bold';
+	src: font-url('Aleo-Bold.eot');
+	src: font-url('Aleo-Bold.svg')  format('svg'),
+		   font-url('Aleo-Bold.woff') format('woff'),
+	   	 font-url('Aleo-Bold.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'Aleo-BoldItalic';
+	src: font-url('Aleo-BoldItalic.eot');
+	src: font-url('Aleo-BoldItalic.svg')  format('svg'),
+		   font-url('Aleo-BoldItalic.woff') format('woff'),
+	   	 font-url('Aleo-BoldItalic.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'Aleo-Italic';
+	src: font-url('Aleo-Italic.eot');
+	src: font-url('Aleo-Italic.svg')  format('svg'),
+		   font-url('Aleo-Italic.woff') format('woff'),
+	   	 font-url('Aleo-Italic.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aleo-Light';
+	src: font-url('Aleo-Light.eot');
+	src: font-url('Aleo-Light.svg')  format('svg'),
+		   font-url('Aleo-Light.woff') format('woff'),
+	   	 font-url('Aleo-Light.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aleo-LightItalic';
+	src: font-url('Aleo-LightItalic.eot');
+	src: font-url('Aleo-LightItalic.svg')  format('svg'),
+		   font-url('Aleo-LightItalic.woff') format('woff'),
+	   	 font-url('Aleo-LightItalic.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aleo-Regular';
+	src: font-url('Aleo-Regular.eot');
+	src: font-url('Aleo-Regular.svg')  format('svg'),
+		   font-url('Aleo-Regular.woff') format('woff'),
+	   	 font-url('Aleo-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h2 {
+	font-family: 'Aleo-Bold', Helvetica, Arial, sans-serif;
+}
+
+p {
+	font-family: 'Aleo-Regular', Helvetica, Arial, sans-serif;
+}
+
+.mmenu a {
+	font-family: 'Aleo-Light', Helvetica, Arial, sans-serif;
+}
 
 /* -------------------------------------------------------------------------- */
 /* -------------------------------- HEADER ---------------------------------- */
@@ -45,7 +114,7 @@ header {
 
 #home-link, #banner, h1  {
 
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Aleo-Light', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	// color:     darken($white, 15%);
 	color: rgba( 255, 255, 255, 0.6 );
@@ -109,10 +178,14 @@ html.mmenu-opening header {
 /* -------------------------------------------------------------------------- */
 
 footer {
+	font-size: .8em;
 	padding-top: 1em;
 	color:      white;
 	background: $dark-blue;
 	margin-top: 1em;
+	p {
+			font-family: 'Aleo-Light', Helvetica, Arial, sans-serif;
+	}
 }
 
 #copyright {
