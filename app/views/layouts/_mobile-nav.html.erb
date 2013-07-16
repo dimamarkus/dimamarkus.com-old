@@ -1,9 +1,21 @@
 <nav id="menu">
   <ul>
     <li class="Selected" ><%= link_to 'Dima Markus', root_path, id: "home-link" %></li>
-    <li><%= link_to 'Web Design', web_path %></li>
-    <li><%= link_to 'Blog', blog_path %></li>
-    <li><%= link_to 'Music', music_path %></li>
-    <li><%= link_to 'About', about_path %></li>
+    <li>
+    	<div class="livicon" data-name="globe"></div>
+    	<%= link_to 'Web Design', web_path %>
+    </li>
+    <li>
+    	<div class="livicon" data-name="notebook"></div>
+    	<%= link_to 'Blog', blog_path %>
+    </li>
+    <li>
+     	<div class="livicon" data-name="music"></div>
+    	<%= link_to 'Music', music_path %>
+    </li>
+    <li>
+    	<div class="livicon" data-name="user"></div>	
+    	<%= link_to 'About', about_path %>
+    </li>
   </ul>
 </nav>
